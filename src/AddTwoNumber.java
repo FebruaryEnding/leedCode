@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 /**
  * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
  * <p>
@@ -18,10 +20,42 @@
 public class AddTwoNumber {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        boolean end = false;
+        String value1 = "";
+        String value2 = "";
+        do {
+            if (l1 == null) {
+                value1 = 0 + value1;
+            } else {
+                int val1 = l1.val;
+                value1 = val1 + value1;
+            }
+            if (l2 == null) {
+                value2 = 0 + value2;
+            } else {
+                int val2 = l2.val;
+                value2 = val2 + value2;
+            }
+            if (l1.next != null || l2.next != null) {
+
+            } else {
+                end = true;
+            }
+
+        } while (end);
+        Integer integer = Integer.valueOf(value1);
+        Integer integer1 = Integer.valueOf(value2);
+        int result = integer + integer1;
 
         return null;
     }
+
+
+    public static void main(String[] args) {
+        BigDecimal bigDecimal = new BigDecimal("0123");
+    }
 }
+
 
 class ListNode {
     int val;
