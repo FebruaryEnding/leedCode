@@ -23,12 +23,23 @@ public class AddTwoNumber {
 
 
     /**
-     * 这应该是最简陋的通过方法了
+     * 看下网上的
+     *
      * @param l1
      * @param l2
      * @return
      */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+
+        return  null;
+    }
+    /**
+     * 这应该是最简陋的通过方法了
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public ListNode addTwoNumbers3(ListNode l1, ListNode l2) {
         boolean end = true;
         Integer value1 = 0;
         Integer value2 = 0;
